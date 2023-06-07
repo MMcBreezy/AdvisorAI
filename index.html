@@ -12,109 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      @keyframes bubble {
-        0% {
-          transform: translateY(100%);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(-100%);
-          opacity: 0;
-        }
-      }
-
-      body {
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-        color: rgb(253, 242, 217);
-        background: rgb(20, 42, 60);
-      }
-
-      section {
-        box-sizing: border-box;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 100px 20vw;
-        height: 100vh;
-      }
-
-      .color1 {
-        background: rgb(20, 42, 60);
-      }
-
-      .color2 {
-        background: rgb(253, 242, 217);
-        overflow: hidden;
-      }
-
-      .color2::after {
-        content: "";
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: radial-gradient(
-          circle,
-          rgba(20, 42, 60, 1) 0%,
-          rgba(253, 242, 217, 1) 100%
-        );
-        bottom: 0;
-        left: calc(50% - 75px);
-        animation: bubble 5s infinite;
-      }
-
-      .fontColor1 {
-        color: rgb(20, 42, 60);
-      }
-      .fontColor2 {
-        color: rgb(253, 242, 217);
-      }
-      .color2::after,
-      .bubble-container::before,
-      .bubble-container::after {
-        content: "";
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: radial-gradient(
-          circle,
-          rgba(20, 42, 60, 1) 0%,
-          rgba(253, 242, 217, 1) 100%
-        );
-        bottom: 0;
-        animation: bubble 5s infinite;
-      }
-
-      .color2::after {
-        left: calc(50% - 75px);
-      }
-
-      .bubble-container::before {
-        left: calc(30% - 75px);
-        animation-duration: 7s; /* The bubble will appear less frequently */
-      }
-
-      .bubble-container::after {
-        right: calc(30% - 75px);
-        animation-duration: 9s; /* The bubble will appear even less frequently */
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="color2">
       <div class="bubble-container"></div>
-      <h1 class="fontColor1">Test</h1>
-      <p class="fontColor1">
-        Quaerat nisi molestias non velit quis excepturi facere, veniam tempore
-        nihil, neque, aliquid hic expedita. Voluptatem dolor debitis, corrupti
-        vero aspernatur labore animi at voluptate quibusdam ex aliquid odio
-        repellat?
-      </p>
+      <h1 class="fontColor1 header">Advisor_AI</h1>
+      <p class="fontColor1">work and learning planner</p>
     </section>
   </body>
 </html>
