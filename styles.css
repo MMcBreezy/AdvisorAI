@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color: rgb(20, 42, 60);
+  --text-color: rgb(253, 242, 217);
+  --bubble-size: 150px;
+}
+
 @keyframes bubble {
   0% {
     transform: translateY(100%);
@@ -12,15 +18,15 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: rgb(253, 242, 217);
-  background: rgb(20, 42, 60);
+  color: var(--text-color);
+  background: var(--main-bg-color);
 }
 
-header {
+.header {
   margin: 2px;
 }
 
-section {
+.section {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -30,59 +36,44 @@ section {
   height: 100vh;
 }
 
-.color1 {
-  background: rgb(20, 42, 60);
+.section--dark {
+  background: var(--main-bg-color);
 }
 
-.color2 {
-  background: rgb(253, 242, 217);
+.section--light {
+  background: var(--text-color);
   overflow: hidden;
 }
 
-.color2::after {
+.bubble {
   content: "";
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: var(--bubble-size);
+  height: var(--bubble-size);
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(20, 42, 60, 1) 0%,
-    rgba(253, 242, 217, 1) 100%
-  );
-  bottom: 0;
-  left: calc(50% - 75px);
-  animation: bubble 6s infinite; /* change duration to 3s */
-}
-
-.fontColor1 {
-  color: rgb(20, 42, 60);
-}
-.fontColor2 {
-  color: rgb(253, 242, 217);
-}
-.bubble-container::before,
-.bubble-container::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(20, 42, 60, 1) 0%,
-    rgba(253, 242, 217, 1) 100%
-  );
+  background: radial-gradient(circle, rgba(20, 42, 60, 1) 0%, rgba(253, 242, 217, 1) 100%);
   bottom: 0;
   animation: bubble 5s infinite;
 }
 
-.bubble-container::before {
-  left: calc(30% - 75px);
+.bubble--center {
+  left: calc(50% - var(--bubble-size)/2);
+}
+
+.bubble--left {
+  left: calc(30% - var(--bubble-size)/2);
   animation-duration: 7s; /* The bubble will appear less frequently */
 }
 
-.bubble-container::after {
-  right: calc(30% - 75px);
+.bubble--right {
+  right: calc(30% - var(--bubble-size)/2);
   animation-duration: 9s; /* The bubble will appear even less frequently */
+}
+
+.text-dark {
+  color: var(--main-bg-color);
+}
+
+.text-light {
+  color: var(--text-color);
 }
