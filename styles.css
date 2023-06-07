@@ -1,0 +1,25 @@
+.blob {
+    position: absolute;
+    background: rgba(20, 42, 60, 1);
+    border-radius: 50%;
+    animation: blobMove 5s linear infinite, blobScale 5s ease-in-out infinite;
+  }
+  
+  @keyframes blobMove {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes blobScale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
