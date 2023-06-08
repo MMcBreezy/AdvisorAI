@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: rgb(20, 42, 60);
   --text-color: rgb(253, 242, 217);
-  --bubble-size: 150px;
+  --bubble-size: 170px;
 }
 
 @keyframes bubble {
@@ -51,9 +51,9 @@ body {
   width: var(--bubble-size);
   height: var(--bubble-size);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(20, 42, 60, 1) 0%, rgba(253, 242, 217, 1) 100%);
+  background: radial-gradient(circle at bottom, rgba(20, 42, 60, 1) 0%, rgba(253, 242, 217, 1) 100%);
   bottom: 0;
-  animation: bubble 5s infinite;
+  animation: bubble 8s infinite;
 }
 
 .bubble--center {
@@ -68,6 +68,16 @@ body {
 .bubble--right {
   right: calc(30% - var(--bubble-size)/2);
   animation-duration: 9s; /* The bubble will appear even less frequently */
+}
+
+.bubble--extra--right {
+  right: calc(87% - var(--bubble-size)/2);
+  animation-duration: 12s; /* The bubble will appear less frequently */
+}
+
+.bubble--extra--left {
+  left: calc(87% - var(--bubble-size)/2);
+  animation-duration: 17s; /* The bubble will appear less frequently */
 }
 
 .text-dark {
