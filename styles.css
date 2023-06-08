@@ -122,6 +122,7 @@ body {
   transition: background-color 0.3s ease;
   opacity: 0.6;
   outline: none;
+  display: none;
 }
 
 .submit-button:hover {
@@ -152,6 +153,12 @@ body {
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
+}
+
+.fade-in-quick {
+  opacity: 0;
+  animation: fadeIn ease .7s;
+  animation-fill-mode: forwards;
 }
 
 .fade-in-later {
