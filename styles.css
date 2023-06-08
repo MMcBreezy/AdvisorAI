@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: rgb(20, 42, 60);
   --text-color: rgb(253, 242, 217);
-  --bubble-size: 170px;
+  --bubble-size: 150px;
 }
 
 @keyframes bubble {
