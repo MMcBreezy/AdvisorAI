@@ -120,7 +120,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  opacity: 0.8;
+  opacity: 0.6;
   outline: none;
 }
 
@@ -162,7 +162,7 @@ body {
 
 @keyframes fadeIn {
   0% { opacity: 0; }
-  100% { opacity: 1; }
+  100% { opacity: .8; }
 }
 
 .fade-out {
