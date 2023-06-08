@@ -51,32 +51,36 @@ body {
   width: var(--bubble-size);
   height: var(--bubble-size);
   border-radius: 50%;
-  background: radial-gradient(circle at bottom, rgba(20, 42, 60, 1) 0%, rgba(253, 242, 217, 1) 100%);
+  background: radial-gradient(
+    circle at bottom,
+    rgba(20, 42, 60, 1) 0%,
+    rgba(253, 242, 217, 1) 100%
+  );
   bottom: 0;
   animation: bubble 8s infinite;
 }
 
 .bubble--center {
-  left: calc(50% - var(--bubble-size)/2);
+  left: calc(50% - var(--bubble-size) / 2);
 }
 
 .bubble--left {
-  left: calc(30% - var(--bubble-size)/2);
+  left: calc(30% - var(--bubble-size) / 2);
   animation-duration: 7s; /* The bubble will appear less frequently */
 }
 
 .bubble--right {
-  right: calc(30% - var(--bubble-size)/2);
+  right: calc(30% - var(--bubble-size) / 2);
   animation-duration: 9s; /* The bubble will appear even less frequently */
 }
 
 .bubble--extra--right {
-  right: calc(87% - var(--bubble-size)/2);
+  right: calc(87% - var(--bubble-size) / 2);
   animation-duration: 12s; /* The bubble will appear less frequently */
 }
 
 .bubble--extra--left {
-  left: calc(87% - var(--bubble-size)/2);
+  left: calc(87% - var(--bubble-size) / 2);
   animation-duration: 17s; /* The bubble will appear less frequently */
 }
 
@@ -117,7 +121,7 @@ body {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
   opacity: 0.6;
@@ -157,7 +161,7 @@ body {
 
 .fade-in-quick {
   opacity: 0;
-  animation: fadeIn ease .7s;
+  animation: fadeIn ease 0.7s;
   animation-fill-mode: forwards;
 }
 
@@ -168,8 +172,12 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: .8; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 .fade-out {
@@ -178,6 +186,10 @@ body {
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to   { opacity: 0.2; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
 }
