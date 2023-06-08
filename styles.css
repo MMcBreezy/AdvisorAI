@@ -87,3 +87,47 @@ body {
 .text-light {
   color: var(--text-color);
 }
+
+.textarea-field {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: var(--main-bg-color);
+  background: white;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 90%;
+  height: 20%;
+  min-height: 25px;
+  padding: 0.5em;
+  caret-color: var(--main-bg-color);
+  resize: none;
+  overflow: auto;
+}
+
+.input-field:focus {
+  caret-color: var(--main-bg-color);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
