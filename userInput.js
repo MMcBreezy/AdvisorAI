@@ -16,7 +16,7 @@ textArea.addEventListener("input", (e) => {
   }
 });
 
-// Store data in local storage when user types
+// Store data in local storage when user clicks submit
 button.addEventListener("click", (e) => {
   const userInput = textArea.value;
   localStorage.setItem("userInput", userInput);
