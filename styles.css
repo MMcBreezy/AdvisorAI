@@ -66,22 +66,22 @@ body {
 
 .bubble--left {
   left: calc(30% - var(--bubble-size) / 2);
-  animation-duration: 7s; /* The bubble will appear less frequently */
+  animation-duration: 7s;
 }
 
 .bubble--right {
   right: calc(30% - var(--bubble-size) / 2);
-  animation-duration: 9s; /* The bubble will appear even less frequently */
+  animation-duration: 9s;
 }
 
 .bubble--extra--right {
   right: calc(87% - var(--bubble-size) / 2);
-  animation-duration: 12s; /* The bubble will appear less frequently */
+  animation-duration: 12s;
 }
 
 .bubble--extra--left {
   left: calc(87% - var(--bubble-size) / 2);
-  animation-duration: 17s; /* The bubble will appear less frequently */
+  animation-duration: 17s;
 }
 
 .text-dark {
@@ -114,8 +114,8 @@ body {
 }
 
 .submit-button {
-  background-color: var(--main-bg-color); /* Use your page's main color */
-  color: var(--text-color); /* Use your page's text color */
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
   margin-top: 10px;
@@ -130,15 +130,15 @@ body {
 }
 
 .submit-button:hover {
-  background-color: rgb(204, 197, 180); /* A lighter shade for hover effect */
+  background-color: rgb(204, 197, 180);
   color: var(--main-bg-color);
   opacity: 0.7;
 }
 
 .submit-button:active {
-  background-color: rgb(204, 197, 180); /* A lighter shade for active effect */
+  background-color: rgb(204, 197, 180);
   color: var(--main-bg-color);
-  transform: translateY(2px); /* Gives a sense of button being pressed */
+  transform: translateY(2px);
   opacity: 0.6;
 }
 
