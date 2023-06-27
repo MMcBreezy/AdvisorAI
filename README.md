@@ -6,10 +6,6 @@ AdvisorAI is a work and learning planner tool in development, designed to intera
 
 This project is currently in development. Users can input the area or topic they want to learn and the tool will assist them in planning their learning path. 
 
-## Project Preview
-
-This project is built using HTML, CSS, and JavaScript. Here's a brief look at the code so far:
-
 ## Installation and Setup Instructions
 Since the project is still under development, you cannot yet install and run it locally. This section will be updated as the project progresses.
 
